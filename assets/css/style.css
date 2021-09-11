@@ -33,3 +33,27 @@ nav a {
     font-weight: bold;
     text-decoration: none;
 }
+
+nav a:hover {
+    
+}
+
+section {
+    display: flex;
+}
+
+aside {
+    flex: 20%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 80%;
+    padding: 30px;
+}
+@media screen and (max-width: 992px) {
+    nav {
+        
+    }
+}
