@@ -1,6 +1,5 @@
 * {
-    font: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -18,13 +17,14 @@ header {
 }
 
 h1 {
-    font-size: 250%;
+    font-size: 300%;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 325px;
+    font-size: 125%;
 }
 
 nav a {
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    
+    opacity: 50%;
 }
 
 section {
@@ -46,14 +46,26 @@ aside {
     flex: 20%;
     padding: 20px;
     flex-wrap: wrap;
+    background-color: #2b6777;
+    font-size: 175%;
+    color: #fff;
+    font-weight:100;
 }
 
 article {
     flex: 80%;
     padding: 30px;
+    background-color: #c8d8e4;
 }
+
 @media screen and (max-width: 992px) {
     nav {
-        
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work-image {
+        display:flex;
     }
 }
