@@ -2,3 +2,34 @@
     font: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: #ffffff;
+    color: grey;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a {
+    background-color: unset;
+    color: #52ab98;
+    font-weight: bold;
+    text-decoration: none;
+}
