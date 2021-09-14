@@ -1,3 +1,7 @@
+:root {
+    --white: #fff;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -6,7 +10,7 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0 12px;
+    margin: 0;
 }
 
 header {
@@ -15,18 +19,11 @@ header {
     align-items: center;
     padding: 2%;
     background-color: #2b6777;
-    color: #fff;
+    color: var(--white);
 }
 
 h1 {
     font-size: 300%;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 325px;
-    font-size: 125%;
 }
 
 nav a {
@@ -49,7 +46,7 @@ aside {
     flex: 25%;
     padding: 20px;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: var(--white);
     font-size: 225%;
     color: #2b6777;
     font-weight:100;
@@ -60,8 +57,23 @@ aside {
 article {
     flex: 75%;
     padding: 30px;
-    background-color: #fff;
+    background-color: var(--white);
     color: black;
+}
+
+footer {
+    text-align:center;
+}
+.nav-link-area {
+    display: flex;
+    justify-content: space-between;
+    min-width: 375px;
+    font-size: 125%;
+}
+
+.links {
+    text-decoration: underline;
+    color: var(--white);
 }
 
 .wallpaper {
