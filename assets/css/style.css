@@ -98,24 +98,6 @@ footer {
     font-size: 120%;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-}
-
-.justify-center {
-    justify-content:center;
-}
-
-.image-column {
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-}
-
 .main-image {
     display: flex;
     min-height: 100%;
@@ -124,6 +106,7 @@ footer {
     border: 5px solid #fff;
     opacity: 50%;
     flex: 1 1 100%;
+    max-width: 100%;
 }
 
 .work-image {
