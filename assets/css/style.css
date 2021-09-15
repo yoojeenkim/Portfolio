@@ -149,6 +149,17 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 50%;
+    position: relative;
+}
+
+.sub-subheaders {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background-color: #92cccd;
+    border: 10px solid #92cccd;
 }
 
 .contact-section {
@@ -167,6 +178,17 @@ footer {
 #hero-image {
     background-image: url("../images/portrait.jfif");
     height: 800px;
+    position: relative;
+}
+
+#hero-subheader {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background-color: #92cccd;
+    border: 30px solid #92cccd;
 }
 
 #project-image {
