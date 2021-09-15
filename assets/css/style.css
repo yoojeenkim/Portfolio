@@ -48,7 +48,10 @@ aside {
 
 article {
     flex: 75%;
-    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #fff;
     color: black;
 }
@@ -91,22 +94,26 @@ footer {
     float: left;
     margin: 4px 16px 2px 4px;
 }
+.about-me-text {
+    font-size: 120%;
+}
 
 .portfolio-images {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
 }
 
 .main-image {
+    position: relative;
     border: 7px solid #92cccd;
     object-fit:cover;
     height: 800px;
     width: 100%;
-    padding: 0;
-    margin: 5px;
+    margin: 2%;
 }
 
 .work-image {
@@ -114,8 +121,7 @@ footer {
     object-fit:cover;
     height: 300px;
     width: 45%;
-    padding: 0;
-    margin: 5px;
+    margin: 2%;
 }
 
 .contact-section {
@@ -136,4 +142,6 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    
+    .
 }
