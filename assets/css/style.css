@@ -100,32 +100,33 @@ footer {
 
 .main-image {
     display: flex;
-    min-height: 100%;
-    padding: 2rem;
-    height: 500px;
-    border: 5px solid #fff;
+    flex-wrap:wrap;
+    margin-top: 2%;
+    flex: 1 0 0;
+    height: 400px;
+    border: 5px solid #92cccd;
+    object-fit:cover;
     opacity: 50%;
-    flex: 1 1 100%;
-    max-width: 100%;
 }
 
-.work-image {
+.main-header {
+    position: relative;
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+    background: #92cccd;
+}
+
+.work-area {
     display: flex;
-    min-height: 50%;
-    padding: 2rem;
+    flex-direction: row;
+}
+.work-image {
+    flex-wrap:wrap;
+    object-fit:cover;
     height: 300px;
     opacity: 50%;
     flex: 1 1 40%;
-}
-
-.main-image .image-header,
-.work-image .image-header {
-    position: relative;
-    margin:2px;
-    padding: 1px;
-    border: 2px solid;
-    border-radius: 2px;
-    transition: all 0.5s ease-in-out;
+    border: 5px solid #92cccd;
 }
 
 .main-image:hover,
