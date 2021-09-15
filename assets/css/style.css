@@ -131,7 +131,6 @@ footer {
 .work-images {
     background-size: cover;
     background-position: center;
-    display: block;
     margin-bottom: 1rem;
     position: relative;
     opacity: 60%;
@@ -144,18 +143,14 @@ footer {
 }
 
 .sub-images {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 50%;
+    width: 100%;
     position: relative;
 }
 
 .sub-subheaders {
     position: absolute;
     top: 180px;
-    left: 0;
+    left: -5px;
     font-size: 1.7rem;
     font-weight: 600;
     background-color: #92cccd;
@@ -184,7 +179,7 @@ footer {
 #hero-subheader {
     position: absolute;
     top: 600px;
-    left: 0;
+    left: -3px;
     font-size: 2.5rem;
     font-weight: 800;
     background-color: #92cccd;
