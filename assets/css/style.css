@@ -1,217 +1,37 @@
-/* universal selector dictates font and line spacing for whole page*/
-* { 
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2;
+* {
+    box-sizing: border-box;
 }
 
-/* element selector targets semantic elements */
+:root {
+    --primary: rgba(68, 88, 119, 1);
+    --secondary: rgba(146, 204, 206, 1);
+    --tertiary: rgba(49, 52, 61, 1);
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgba(238, 238, 247, 1);
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida San Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
 }
 
 header {
+    padding: 15px 6% 15px 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    background-color: #31343d;
-    color: #92cccd;
-}
-
-nav a {
-    background-color: unset;
-    color: #92cccd;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-/* pseudo class changes opacity of nav link to indicate that they are being targeted */
-nav a:hover {
-    opacity: 50%;
-}
-
-section {
-    display: flex;
-}
-
-aside {
-    display: flex;
-    flex: 25%;
-    padding: 20px;
     flex-wrap: wrap;
-    background-color: #fff;
-    font-size: 500%;
-    color: #4b5f7d;
-    font-weight: bold;
-    justify-content: flex-end;
-    border-right: 7px solid #4b5f7d;
+    align-items: center;
+    background-color: var(--tertiary);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
-article {
-    flex: 75%;
-    padding-left: 40px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #fff;
-    color: black;
-}
-
-footer {
-    text-align:center;
-}
-
-.nav-link-area {
-    display: flex;
-    justify-content: space-between;
-    min-width: 375px;
-    font-size: 125%;
-}
-
-.h1 {
-    display: relative;
-    border-left: 50px solid #92cccd;
-    font-size: 300%;
-    font-weight: bold;
-    color: #31343d;
-    background-color: #92cccd;
-}
-
-.links {
-    text-decoration: underline;
-    color: #92cccd;
-}
-
-.subheader {
-    display: flex;
-    justify-content: flex-end;
-    background-image: url("../images/wallpaper.jpg");
-    background-size: cover;
-    position: relative;
-    height: 500px;
-    padding: 2%;
-}
-
-.subtitle {
-    display: inline;
-    position: absolute;
-    top: 350px;
-    margin: 5%;
-    background-color: #92cccd;
-    font-size: 1.5rem;
-    text-align: center;
-    height: 80px;
-    width: 400px;
-    font-size: 2.5em;
-    font-weight: bolder;
-}
-
-.portrait {
-    display: flex;
-    height: auto;
-    max-width: 200px;
-    float: left;
-    margin: 4px 16px 2px 4px;
-}
-.about-me-text {
-    font-size: 120%;
-}
-
-.work-section {
-    flex: 75%;
-    padding-left: 40px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #fff;
-}
-
-.work-images {
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 1rem;
-    position: relative;
-    opacity: 60%;
-    border: 7px solid #92cccd;
-}
-
-/* another use of the pseduo class to change the opacity of the targeted classes back to the original state */
-.work-images:hover {
-    opacity: initial;
-}
-
-.sub-images {
-    width: 100%;
-    position: relative;
-}
-
-.sub-subheaders {
-    position: absolute;
-    top: 180px;
-    left: -5px;
-    font-size: 1.7rem;
-    font-weight: 600;
-    background-color: #92cccd;
-    border: 10px solid #92cccd;
-}
-
-.contact-section {
-    display: flex;
-    justify-content: space-evenly;
-    min-width: 375px;
-    font-size: 275%;
-}
-
-.contact-links {
-    text-decoration: 10px underline #4b5f7d;
-    color: black;
-    text-underline-offset: 10px;
-}
-
-#hero-image {
-    background-image: url("../images/portrait.jfif");
-    height: 800px;
-    position: relative;
-}
-
-#hero-subheader {
-    position: absolute;
-    top: 600px;
-    left: -3px;
-    font-size: 2.5rem;
-    font-weight: 800;
-    background-color: #92cccd;
-    border: 30px solid #92cccd;
-}
-
-#project-image {
-    background-image: url("../images/cheatsheet.jpg");
-    height: 300px;
-}
-
-#calculator-image {
-    background-image: url("../images/calculator.jpg");
-    height: 300px;
-}
-
-#game-image {
-    background-image: url("../images/league-of-legends.jpg");
-    height: 300px;
-}
-
-#tennis-image {
-    background-image: url("../images/tennis.jfif");
-    height: 300px;
-}
-
-/* media screen query adjusts size accordingly and flexs into a column rather than running off page or in a row*/
-@media screen and (max-width: 992px) {
-    main,
-    nav,
-    header {
-        flex-direction: column;
-        width: 75%
-    }
+header h1 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    font-size: 4vw;
+    line-height: 1;
 }
