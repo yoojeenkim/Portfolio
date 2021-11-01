@@ -12,12 +12,20 @@ body {
 }
 
 header {
+    padding: 15px 6% 15px 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 2%;
     background-color: #31343d;
     color: #92cccd;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -171,7 +179,7 @@ footer {
 }
 
 #hero-image {
-    background-image: url("../images/portrait.jfif");
+    background-image: url("/images/petdog.jpg");
     height: 800px;
     position: relative;
 }
@@ -187,22 +195,22 @@ footer {
 }
 
 #project-image {
-    background-image: url("../images/cheatsheet.jpg");
+    background-image: url("/images/inspiration.jpg");
     height: 300px;
 }
 
 #calculator-image {
-    background-image: url("../images/calculator.jpg");
+    background-image: url("/images/calculator.jpg");
     height: 300px;
 }
 
-#game-image {
-    background-image: url("../images/league-of-legends.jpg");
+#readme-image {
+    background-image: url("/images/generate.jpg");
     height: 300px;
 }
 
 #tennis-image {
-    background-image: url("../images/tennis.jfif");
+    background-image: url("../images/tennis.jpg");
     height: 300px;
 }
 
